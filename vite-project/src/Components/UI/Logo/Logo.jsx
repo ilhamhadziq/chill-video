@@ -1,0 +1,8 @@
+const Logo =(props)=>{
+    const {alt, src, className}= props
+    return(
+        <img src= {src} alt={alt} className={`${className} w-full h-auto max-w-23.5 md:max-w-40.75 `} />
+    )
+}
+
+export default Logo;
