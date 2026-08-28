@@ -1,15 +1,17 @@
-import Button from "../../UI/Button";
 import Logo from "../../UI/Logo";
 import Title from "../../UI/Title";
+import FormLogin from "../../Form/formLogin";
 const Login = ()=> {
     return(
-        <main className="min-h-screen bg-[url('public/background.jpg')] bg-center bg-cover flex items-center justify-center text-white font-lato px-8">
-            <form action="submit" className="flex flex-col items-center justify-center gap-4 p-6 bg-[#181A1CD6] opacity-85 rounded-lg w-full max-w-md sm:max-w-lg mx-auto">
-                <Logo src ="public/logo.png" alt= "Logo"/>
-                <Title></Title>
-                
-                <Button className={''}>Masuk</Button>
-            </form>                        
+        <main className="min-h-screen bg-[url('public/background.jpg')] bg-center bg-cover  text-white font-lato relative overflow-hidden">
+            <div className="absolute inset-0 bg-black/30"/>
+            <section className="relative z-10 flex min-h-96 items-center justify-center px-5 py-12 sm:px-8">
+                <div className="w-full max-w-152.5 rounded-2xl bg-[#25282c]/84 px-8 py-10 shadow-2xl backdrop-blur-sm sm:px-12 sm:py-12">
+                    <Logo src ="public/logo.png" alt= "Logo"/>
+                    <Title parag="Selamat datang kembali!">Masuk</Title>
+                    <FormLogin></FormLogin>  
+                </div>
+            </section>                      
         </main>
     )
 }
