@@ -4,20 +4,14 @@ import { Clapperboard, EyeOff } from "lucide-react";
 
 function App() {
   return (
-    <main className="relative min-h-screen overflow-hidden bg-black">
-      {/* Background Image */}
-      <img
-        src="public/background.jpg"
-        alt="Cinema Background"
-        className="absolute inset-0 h-full w-full object-cover"
-      />
+    <main className="relative min-h-screen overflow-hidden bg-[url('public/background.jpg')] bg-center bg-cover">
 
       {/* Overlay */}
-      <div className="absolute inset-0 bg-black/50"></div>
+      <div className="absolute inset-0 bg-black/30"></div>
 
       {/* Content */}
       <section className="relative z-10 flex min-h-96 items-center justify-center px-5 py-10 sm:px-8">
-        <div className="w-full max-w-152.5 rounded-2xl bg-[#25282c]/95 px-8 py-10 shadow-2xl backdrop-blur-sm sm:px-12 sm:py-12">
+        <div className="w-full max-w-152.5 rounded-2xl bg-[#25282c]/84 px-8 py-10 shadow-2xl backdrop-blur-sm sm:px-12 sm:py-12">
           
           {/* Logo */}
           <div className="mb-10 flex items-center justify-center gap-2 text-white">
