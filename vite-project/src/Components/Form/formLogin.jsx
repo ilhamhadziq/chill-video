@@ -1,4 +1,5 @@
 import Button from "../UI/Button/Button";
+import Divider from "../UI/Divider/Divider";
 import Input from "../UI/Input";
 
 const FormLogin =() =>{
@@ -7,7 +8,8 @@ const FormLogin =() =>{
             <Input type="text" placeholder="Masukkan username" id="username">Username</Input> 
             <Input type="password" placeholder="Masukkan password" id="password">Password</Input>
             <Button>Masuk</Button>
-            
+            <Divider></Divider>
+            <Button>Google</Button>
         </form>
     )
 }
