@@ -9,7 +9,7 @@ const FormLogin =() =>{
             <Input type="password" placeholder="Masukkan password" id="password">Password</Input>
             <Button>Masuk</Button>
             <Divider></Divider>
-            <Button>Google</Button>
+            <Button className='bg-transparent'><img src="public/google.png" alt="google" className="w-4.5 h-auto" />Google</Button>
         </form>
     )
 }
