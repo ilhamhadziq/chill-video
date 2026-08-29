@@ -1,0 +1,19 @@
+import Button from "../UI/Button/Button";
+import Divider from "../UI/Divider/Divider";
+import Input from "../UI/Input";
+import Forgot from "../UI/Text/Forgot";
+
+const FormRegister =() =>{
+    return(
+        <form action="submit" className="flex gap-2 flex-col">
+            <Input type="text" placeholder="Masukkan username" id="username">Username</Input> 
+            <Input type="password" placeholder="Masukkan password" id="password">Password</Input>
+            <Input type="password" placeholder="Konfirmasi password" id="confpassword">Konfirmasi Password</Input>
+            <Forgot></Forgot>
+            <Button>Daftar</Button>
+            <Divider></Divider>
+            <Button className='bg-transparent'><img src="public/google.png" alt="google" className="w-4.5 h-auto" />Masuk dengan Google</Button>
+        </form>
+    )
+}
+export default FormRegister;
