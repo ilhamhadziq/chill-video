@@ -8,7 +8,14 @@ const FormLogin =() =>{
         <form action="submit" className="flex gap-2 flex-col">
             <Input type="text" placeholder="Masukkan username" id="username">Username</Input> 
             <Input type="password" placeholder="Masukkan password" id="password">Password</Input>
-            <Forgot></Forgot>
+            <Forgot button='Daftar' insert='Belum punya akun? '>
+                <button
+                    type="button"
+                    className="font-medium text-white hover:underline"
+                >
+                    Lupa kata sandi?
+                </button>
+            </Forgot>
             <Button>Masuk</Button>
             <Divider></Divider>
             <Button className='bg-transparent'><img src="public/google.png" alt="google" className="w-4.5 h-auto" />Masuk dengan Google</Button>

@@ -9,7 +9,7 @@ const FormRegister =() =>{
             <Input type="text" placeholder="Masukkan username" id="username">Username</Input> 
             <Input type="password" placeholder="Masukkan password" id="password">Password</Input>
             <Input type="password" placeholder="Konfirmasi password" id="confpassword">Konfirmasi Password</Input>
-            <Forgot></Forgot>
+            <Forgot button='Masuk' insert='Sudah punya akun? '></Forgot>
             <Button>Daftar</Button>
             <Divider></Divider>
             <Button className='bg-transparent'><img src="public/google.png" alt="google" className="w-4.5 h-auto" />Masuk dengan Google</Button>
