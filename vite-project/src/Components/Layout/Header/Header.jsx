@@ -1,11 +1,11 @@
 import Logo from '../../UI/Logo';
 const Header = ()=>{
     return(
-        <header className='flex justify-between gap-3 py-1.5 px-5 bg-[#181A1C]'>
-            <div className='flex items-center gap-3'>
-                <Logo></Logo>
+        <header className='flex justify-between items-center gap-3 py-1.5 px-5 bg-[#181A1C] text-white'>
+            <div className='flex items-center justify-center gap-3'>
+                <Logo src ="public/logo.png" alt= "Logo"/>
                 <nav>
-                    <ul>
+                    <ul className='flex items-center justify-center gap-3'>
                         <li><a href="">Series</a></li>
                         <li><a href="">Film</a></li>
                         <li><a href="">Daftar Saya</a></li>

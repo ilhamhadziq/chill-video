@@ -3,7 +3,7 @@ const Logo =(props)=>{
     return(
         <div className="flex items-center justify-center">
             
-        <img src= {src} alt={alt} className={`${className} w-full  h-auto max-w-23.5 md:max-w-40.75 mb-10 `} />
+        <img src= {src} alt={alt} className={`${className} w-full  h-auto max-w-23.5 md:max-w-40.75`} />
         </div>
     )
 }

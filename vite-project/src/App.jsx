@@ -5,8 +5,8 @@ import Home from './Components/Pages/Home';
 function App() {
   return (
       // <Login/>
-      <Register/>
-      // <Home/>
+      // <Register/>
+      <Home/>
     
   )
 }
