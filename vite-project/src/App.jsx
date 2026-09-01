@@ -1,14 +1,14 @@
 import './index.css';
-import Login from './Components/Pages/Login';
-import Register from './Components/Pages/Register';
-import Home from './Components/Pages/Home';
+// import Router  from './Router';
+import Router from './Router/index'
+import { RouterProvider } from 'react-router-dom';
 function App() {
   return (
-      // <Login/>
-      // <Register/>
-      <Home/>
+      <>
+        <RouterProvider router={Router}/>
+      </>
     
   )
 }
 
-export default App
+export default App;
