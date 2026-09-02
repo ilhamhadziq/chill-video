@@ -1,18 +1,32 @@
-import Home from '../Components/Pages/Home'
-import Login from '../Components/Pages/Login'
-import Register from '../Components/Pages/Register'
+import Home from '../Components/Pages/Home';
+import Login from '../Components/Pages/Login';
+import Register from '../Components/Pages/Register';
+import ProtectedRoute from './ProtectedRoute';
 const Routes = [
     {
         path:'/',
-        element: (<Home/>)
+        element: (
+            <ProtectedRoute>
+                <Home/>
+            </ProtectedRoute>
+            
+        )
     },
     {
         path:'/login',
-        element: (<Login/>)
+        element: (
+            <ProtectedRoute>
+                <Login/>
+            </ProtectedRoute>
+        )
     },
     {
         path:'/register',
-        element: (<Register/>)
+        element: (            
+            <ProtectedRoute>
+                <Register/>
+            </ProtectedRoute>
+        )
     },
     
 ]

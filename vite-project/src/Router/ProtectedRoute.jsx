@@ -1,0 +1,17 @@
+import { Navigate, useLocation } from "react-router-dom";
+
+const ProtectedRoute = ({children})=>{
+    const auth = localStorage.getItem('auth');
+
+    const currentRoute = useLocation().pathname;
+    
+    if (!auth && currentRoute !== '/login' ) {
+        return <Navigate to="/login" replace/>
+    }
+    if (auth && currentRoute == 'login') {
+        return <Navigate to="/" replace/>
+    }
+    return<>{children}</>
+}
+
+export default ProtectedRoute;
