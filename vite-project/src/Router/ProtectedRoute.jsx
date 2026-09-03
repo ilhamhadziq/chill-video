@@ -5,10 +5,10 @@ const ProtectedRoute = ({children})=>{
 
     const currentRoute = useLocation().pathname;
     
-    if (!auth && currentRoute !== '/login' ) {
+    if (!auth && currentRoute !== '/login' && currentRoute !== '/register' ) {
         return <Navigate to="/login" replace/>
     }
-    if (auth && currentRoute == 'login') {
+    if (auth && currentRoute == '/login' || currentRoute !== '/register') {
         return <Navigate to="/" replace/>
     }
     return<>{children}</>
