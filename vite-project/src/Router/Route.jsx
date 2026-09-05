@@ -6,26 +6,28 @@ const Routes = [
     {
         path:'/',
         element: (
-            <ProtectedRoute>
-                <Home/>
-            </ProtectedRoute>
-            
+            // <ProtectedRoute>
+            //     <Home/>
+            // </ProtectedRoute>
+            <Home/>
         )
     },
     {
         path:'/login',
         element: (
-            <ProtectedRoute>
-                <Login/>
-            </ProtectedRoute>
+            // <ProtectedRoute>
+            //     <Login/>
+            // </ProtectedRoute>
+            <Login/>
         )
     },
     {
         path:'/register',
         element: (            
-            <ProtectedRoute>
-                <Register/>
-            </ProtectedRoute>
+            // <ProtectedRoute>
+            //     <Register/>
+            // </ProtectedRoute>
+            <Register/>
         )
     },
     
